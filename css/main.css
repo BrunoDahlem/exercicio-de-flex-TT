@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    text-decoration: none;
+}
+body, html {
+    height: 100vh;
+    background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    font-family: sans-serif;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 20px);
+    background: #03C4C4;
+    padding: 25px 10px;
+}
+.menu__principal {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+.menu__item a{
+    padding: 10px;
+    background: rgb(235, 235, 236);
+    color: #000;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 60px;
+    text-align: center;
+    font-weight: bold;
+    transition: color .5s, background .5s;
+}
+.menu__item:hover a{
+    background: #0a3c49;
+    color: #fff;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+.conteudo__card {
+    background: #fff;
+    border-radius: 10px;
+    height: 350px;
+    width: 450px;
+}
+.card__01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 65%;
+}
+.card__01::after {
+    content: "";
+    width: 75%;
+    height: 2px;
+    border-bottom: 1px dotted #03C4C4;
+    transition: width .5s;
+}
+.card__01:hover::after {
+    width: 90%;
+}
+.card__descricao {
+    font-size: 20px;
+    text-align: center;
+}
+.card__btn {
+    padding: 10px;
+    background: rgb(235, 235, 236);
+    color: #000;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid #000;
+    transition: color .5s, background .5s;
+}
+.card__btn:hover {
+    background: #008080;
+    color: #fff;
+}
+
+.card__02 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 35%;
+}
+.card__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 33.333%;
+    font-weight: bold;
+    transition: transform .5s;
+}
+.card__item:hover {
+    transform: scale(1.1);
+}
+.item__titulo {
+    background: #008080;
+    color: #fff;
+    width: 50%;
+    text-align: center;
+    padding: 5px;
+}
+.item__assinatura {
+    color: #008080;
+    padding: 5px;
+    border-radius: 10px;
+    transition: color .5s, background .5s;
+}
+.item__assinatura:hover {
+    background: #008080;
+    color: #fff;
+}
